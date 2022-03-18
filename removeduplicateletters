@@ -1,4 +1,4 @@
-def removeDuplicateLetters(string):
+def remove_duplicate_letters(string):
 
         # creating a new array consists of chars of the given string
         letters = [char for char in string]
@@ -26,5 +26,5 @@ def removeDuplicateLetters(string):
         # and returning the output string
         return(final_string.join(newletters))
         
-output = removeDuplicateLetters("bcabc")
+output = remove_duplicate_letters("bcabc")
 print(output)
