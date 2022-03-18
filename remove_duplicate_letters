@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------------------------------------------------
-# ASSIGMENT:
+# ASSIGNMENT:
 # Remove all duplicate letters from a given string such that each letter only appears once. 
 # You must ensure that your output is the smallest in lexicographical order among all possible results.
 
