@@ -1,3 +1,14 @@
+# Remove all duplicate letters from a given string such that each letter only appears once. 
+# You must ensure that your output is the smallest in lexicographical order among all possible results.
+
+# Example:
+# Input: s = "bcabc"
+# Output: "abc"
+
+# Constraints:
+# 1 <= s.length <= 10^4
+# Given string consists of lowercase English letters.
+
 def remove_duplicate_letters(string):
 
         # creating a new array consists of chars of the given string
