@@ -1,0 +1,30 @@
+def removeDuplicateLetters(string):
+
+        # creating a new array consists of chars of the given string
+        letters = [char for char in string]
+        
+        # sorting the array so that it is the smallest in lexicographical order
+        letters.sort()
+        
+        # creating a new array by copying previous array
+        newletters = letters.copy()
+        
+        # scanning every char of the letters array 
+        for i in range(0, len(letters)):
+            for j in range(i+1, len(letters)):
+                
+                # checking if we have duplicate letters
+                if(letters[i] == letters[j]):
+                
+                    # removing duplicate letter existing in the newletters array
+                    newletters.remove(letters[i])
+        
+        # creating an empty string
+        final_string = ""
+        
+        # converting a list of chars into a string
+        # and returning the output string
+        return(final_string.join(newletters))
+        
+output = removeDuplicateLetters("bcabc")
+print(output)
