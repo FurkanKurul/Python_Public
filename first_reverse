@@ -1,0 +1,25 @@
+# First Reverse
+# Have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. 
+# For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
+#
+# https://www.coderbyte.com/information/First%20Reverse
+
+
+
+def FirstReverse(strParam):
+    # code goes here
+    letters = [char for char in strParam]
+    
+    temp_param = []
+    temp_param = letters.copy()
+  
+    for i in range (0, len(strParam)):
+        
+        temp = strParam[(len(strParam)-1)-i]
+        temp_param[i] = temp
+      
+    reversed_string = ""    
+    return(reversed_string.join(temp_param))
+
+# keep this function call here 
+print(FirstReverse(input()))
