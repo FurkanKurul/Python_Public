@@ -3,14 +3,15 @@
 l = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
 f = []
 
-def flatten(l):
+def flatten_list(l):
     for i in l:
         if isinstance(i, list):
-            flatten(i)
+            flatten_list(i)
         else:
             f.append(i)
             
-flatten(l)
+flatten_list(l)
 print(f)
 
+# input : [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
 # output: [1,'a','cat',2,3,'dog',4,5]
