@@ -1,0 +1,17 @@
+# TASK_2: Reverse the given list  [[1, 2], [3, 4], [5, 6, 7, [99, 98, 97, [20,19, 18]]]]
+
+l2 =  [[1, 2], [3, 4], [5, 6, 7, [99, 98, 97, [20,19, 18]]]]
+
+def reverse_list(l):
+    l.reverse()
+    for i in l:
+        if isinstance(i, list):
+            reverse_list(i)
+        #else:
+            # do nothing
+
+reverse_list(l2)
+print(l2)
+
+# input : [[1, 2], [3, 4], [5, 6, 7, [99, 98, 97, [20, 19, 18]]]] 
+# output: [[[[18, 19, 20], 97, 98, 99], 7, 6, 5], [4, 3], [2, 1]]
