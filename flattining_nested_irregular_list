@@ -1,0 +1,14 @@
+# TASK_1: Flatten the given list [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
+l = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+f = []
+
+def flatten(l):
+    for i in l:
+        if isinstance(i, list):
+            flatten(i)
+        else:
+            f.append(i)
+            
+flatten(l)
+print(f)
