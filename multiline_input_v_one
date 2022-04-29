@@ -1,0 +1,42 @@
+"""
+The first number in the first line is number of boxes (n), other 3 number is the lenght of a room (x,y,z)
+Then, we have n number of lines representing dimensions of each boxes (a_n, b_n, c_n)  
+(n, x, y, z, a, b & c are integers, n = 1, 2, ...)
+
+input: 
+n x y z
+a1 b1 c1
+a2 b2 c2
+a3 b3 c3
+...
+a_n b_n c_n
+
+Example
+input: 
+3 6 3 2
+3 2 3 
+3 2 1
+3 2 2
+"""
+
+given = input().split()
+
+l_n = int(given[0])
+room_vol = int(given[1]) * int(given[2]) * int(given[3])
+box_vols = []
+
+for i in range(0, l_n):
+    
+    a,b,c =map(int,input().split())
+    
+    box_vol = a*b*c
+    box_vols.append(box_vol)
+
+print(room_vol)
+print(box_vols)
+
+"""
+output:
+36
+[18, 6, 12]
+"""
