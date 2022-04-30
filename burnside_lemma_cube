@@ -1,0 +1,18 @@
+"""
+Burnside's lemma - Cube 
+
+Burnside's lemma, sometimes also called Burnside's counting theorem, the Cauchy–Frobenius lemma, 
+orbit-counting theorem, or The Lemma that is not Burnside's, is a result in group theory which is 
+often useful in taking account of symmetry when counting mathematical objects. 
+
+The number of rotationally distinct colorings of the faces of a cube in n colors is given by 
+'result' below.
+
+- Wikipedia
+"""
+
+n = int(input())
+
+result = (1/24) * ( n**6 + 3*(n**3 + n**4 + n**3) + 4*( n**2 + n**2) + 6*n**3 )
+
+print( int(result) )
