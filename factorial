@@ -1,5 +1,11 @@
 """
 TASK: Calculate factorial with respect to the given integer input
+
+Factorial Formula: n! = n * (n-1) * (n-2) * ... * 1
+
+Example: We want to calculate 5!. Our inputs must be given as 5, so n = 5.
+
+Output : 5! = 5 * (5-1) * (5-2) * (5-3) * (5-4) =  120
 """
 
 number = int(input())
