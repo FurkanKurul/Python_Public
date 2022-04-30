@@ -1,0 +1,16 @@
+"""
+TASK: Calculate factorial with respect to the given integer input
+"""
+
+number = int(input())
+
+def factorial(n):
+    
+    if (n <= 1):
+        return 1
+    else:
+        return n * factorial(n-1)
+
+a = factorial(number)
+
+print(a)
