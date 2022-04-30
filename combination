@@ -1,0 +1,26 @@
+"""
+TASK: Calculate combination with respect to the given integer inputs
+
+Combination Formula: C(n,r) = n! / [r! * (n-r)!]
+
+Example: We want to calculate C(10,2). Our inputs must be given as "10 2", so n = 10 & r = 2
+
+Output:  C(10,2) = 10! / [2! * (10-2)!] = 45
+"""
+
+obj_num, choosing_obj_num  = map(int, input().split())
+
+def factorial(n):
+    
+    if (n <= 1):
+        return 1
+    else:
+        return n * factorial(n-1)
+
+def combination(n,r):
+    
+    return factorial(n) / (factorial(r) * factorial(n-r))
+    
+c = int(combination(obj_num, choosing_obj_num))    
+    
+print(c)
