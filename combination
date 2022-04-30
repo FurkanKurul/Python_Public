@@ -1,5 +1,5 @@
-"""
-TASK: Calculate combination with respect to the given integer inputs
+""" 
+TASK: Calculate combination with respect to the given integer inputs and return an integer result
 
 Combination Formula: C(n,r) = n! / [r! * (n-r)!]
 
