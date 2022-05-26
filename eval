@@ -1,0 +1,6 @@
+def Calculator(strParam):
+
+  return eval(strParam)
+
+# keep this function call here 
+print (Calculator("7-4-1+8"))
