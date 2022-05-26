@@ -1,0 +1,8 @@
+def FormattedDivision(num1,num2):
+
+  resutl_float = "%.4f" % (float(num1 / num2))
+  resutl_str = "{:,}".format(float(resutl_float))
+  return resutl_str
+
+# keep this function call here 
+print (FormattedDivision(50,20))
