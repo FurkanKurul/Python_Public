@@ -1,0 +1,15 @@
+def VowelCount(strParam):
+
+  VOWELS = ("a", "A", "e", "E", "i", "I", "o", "O", "u", "U")
+
+  vowel_count = 0
+
+  for i in range(len(strParam)):
+
+    if strParam[i] in VOWEL_COUNT:
+      vowel_count += 1
+
+  return vowel_count
+
+# keep this function call here 
+print VowelCount(raw_input())
